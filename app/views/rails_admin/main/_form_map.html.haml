@@ -41,7 +41,7 @@
       }
 
     })};
-%script{:type => 'text/javascript', :src => "http://maps.googleapis.com/maps/api/js?key=#{field.google_api_key}&sensor=false&callback=init_map_field", :async => true, :defer => true}
+%script{:type => 'text/javascript', :src => "//maps.googleapis.com/maps/api/js?key=#{field.google_api_key}&sensor=false&callback=init_map_field", :async => true, :defer => true}
 %div.ramf-map-container{:id => field.dom_name, :style => "width:#{field.map_width}px;height:#{field.map_height}px"}
 = form.send :hidden_field, field.name, :id => field.latitude_dom_name
 = form.send :hidden_field, field.longitude_field, :id => field.longitude_dom_name
